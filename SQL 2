@@ -1,0 +1,8 @@
+GROUP BY
+
+1
+SELECT YEAR(enrolment_date) AS DATA_ISCRIZIONE, COUNT(*) as NUMERO_ISCRITTI
+FROM students 
+GROUP BY YEAR(enrolment_date) ORDER BY year(enrolment_date) desc;
+------------------------------------------------------------------------------
+2
