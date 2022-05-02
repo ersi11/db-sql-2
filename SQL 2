@@ -11,4 +11,13 @@ FROM teachers
 GROUP BY office_address
 ORDER BY num_professori DESC;
 ------------------------------------------------------------------------------
-
+3
+SELECT exam_id, COUNT(exam_id) AS NUMERO_ESAMI, AVG(vote) AS MEDIA_VOTI
+FROM exam_student
+GROUP BY exam_id
+ORDER BY exam_id;
+----------------------------------------------------------------------------
+4
+SELECT degrees.department_id, count(*) as corsi_laurea
+FROM degrees
+group by degrees.department_id;
