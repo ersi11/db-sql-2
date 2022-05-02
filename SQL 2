@@ -21,3 +21,24 @@ ORDER BY exam_id;
 SELECT degrees.department_id, count(*) as corsi_laurea
 FROM degrees
 group by degrees.department_id;
+
+------------------------------------------------------------------------------
+
+JOIN
+
+1
+SELECT *
+FROM students
+JOIN degrees
+ON students.degree_id = degrees.id
+WHERE degrees.name = 'Corso di Laurea in Economia'
+----------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
